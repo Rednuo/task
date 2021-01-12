@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'BEBAS';
+  src: url('./BEBAS.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.test {
+    font-family: 'BEBAS';
+}

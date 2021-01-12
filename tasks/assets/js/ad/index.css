@@ -1,0 +1,30 @@
+.ad-container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination{
+    text-align: right!important;
+    bottom: 0.1rem!important;
+    padding-right: 0.14rem!important;
+}
+
+.swiper-pagination-bullet{
+    width: 0.08rem!important;
+    height: 0.08rem!important;
+    background: rgba(0, 0, 0, 0.16)!important;
+    opacity: 1!important;;
+}
+
+.swiper-pagination-bullet-active{
+    width: 0.08rem!important;
+    height: 0.08rem!important;
+    background: rgba(0, 0, 0, 0.42)!important;
+}

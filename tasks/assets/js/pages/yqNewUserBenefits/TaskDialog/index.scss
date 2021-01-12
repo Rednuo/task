@@ -1,0 +1,89 @@
+@import '../../../../css/mixin.scss';
+@import '../../../../css/animate.scss';
+/* 弹窗禁止滑动 */
+$px2vw: 7.5 / 1vw;
+.mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0,0,0,0.69);
+    .wrap{
+        position: relative;
+        width: 476/$px2vw;
+        margin: 47vh auto;
+        transform: translateY(-50%);
+        text-align: center;
+        .mask-header{
+            .dec{
+                width: 332/$px2vw;
+                height: 148/$px2vw;
+                margin-left: 63/$px2vw;
+                background: url(./image/dec.png) no-repeat center;
+                background-size: 322/$px2vw;
+            }
+            .titleBg{
+                position: relative;
+                z-index: 10;
+                width: 350/$px2vw;
+                height: 94/$px2vw;
+                line-height: 80/$px2vw;
+                margin-top: -10/$px2vw;
+                margin-left: 63/$px2vw;
+                background: url(./image/titbg.png) no-repeat center;
+                background-size: 350/$px2vw;
+                font-size: 36/$px2vw;
+                color: #fff;
+            }
+        }
+        .item{
+            position: relative;
+            z-index: 1;
+            width: 476/$px2vw;
+            height: 380/$px2vw;
+            padding: 85/$px2vw 0 45/$px2vw;
+            margin-top: -47/$px2vw;
+            background: url(./image/item.png) no-repeat center;
+            background-size: 476/$px2vw;
+            h2{
+                font-size: 48/$px2vw;
+                color: #FE8171;
+                font-weight: 600;
+                margin-bottom: 20/$px2vw;
+                .candy{
+                    display: inline-block;
+                    vertical-align: text-bottom;
+                    width: 60/$px2vw;
+                    height: 60/$px2vw;
+                    background: url(./image/day1.png) no-repeat center;
+                    background-size: 50/$px2vw;
+                }
+            }
+            p{
+                font-size: 28/$px2vw;
+                color: #434445;
+            }
+            .btn{
+                width: 384/$px2vw;
+                height: 68/$px2vw;
+                line-height: 68/$px2vw;
+                margin: 58/$px2vw auto 0;
+                border-radius: 34/$px2vw;
+                background-color: #FB5061;
+                font-size: 28/$px2vw;
+                color: #fff;
+            }
+        }
+        .dismiss{
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 52/$px2vw;
+            height: 52/$px2vw;
+            background: url(./image/dismiss.png) no-repeat center;
+            background-size: 52/$px2vw;
+        }
+    }
+}

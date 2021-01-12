@@ -1,0 +1,113 @@
+@import '../../../../css/mixin.scss';
+@import '../../../../css/animate.scss';
+$px2vw: 7.5 / 1vw;
+
+/* 弹窗禁止滑动 */
+body.modal-open {
+    position: fixed;
+    width: 100%;
+}
+
+@-webkit-keyframes rotate360 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.mask{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background:rgba(0,0,0,0.69);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .dialog-wrapper{
+        position: relative;
+        width: 476/$px2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .dialog-close {
+            position: absolute;
+            width: 52/$px2vw;
+            height: 52/$px2vw;
+            background-image: url(./image/modal_close.png);
+            background-size: 100% 100%;
+            top: 4/$px2vw;
+            right: 0;
+        }
+        .dialog-top {
+            width: 332/$px2vw;
+            height: 148/$px2vw;
+            background-image: url(./image/modal_top.png);
+            background-size: 100% 100%;
+            margin-left: -30/$px2vw;
+        }
+        .dialog-title {
+            width: 350/$px2vw;
+            height: 94/$px2vw;
+            background-image: url(./image/modal_title.png);
+            background-size: 100% 100%;
+            font-size: 36/$px2vw;
+            font-weight: 500;
+            color: #FEFFFF;
+            text-shadow: 0/$px2vw 4/$px2vw 6/$px2vw #FF354A;
+            text-align: center;
+            line-height: 80/$px2vw;
+            margin-bottom: -52/$px2vw;
+            z-index: 1;
+        }
+        .dialog-body {
+            width: 100%;
+            border: 30/$px2vw solid transparent;
+            border-image: url(./image/modal_border_image.png) 28 28 stretch;
+            border-radius: 30/$px2vw;
+            background-color: #FEFFFF;
+            text-align: center;
+            p {
+                .sugar {
+                    display: block;
+                    width: 50/$px2vw;
+                    height: 50/$px2vw;
+                    background-image: url(./image/icon_sugar_2.png);
+                    background-size: 100% 100%;
+                    margin-right: 20/$px2vw;
+                    margin-bottom: -4/$px2vw;
+                }
+                font-size: 52/$px2vw;
+                font-weight: bold;
+                color: #FE8171;
+                line-height: 60/$px2vw;
+                text-align: center;
+                margin: 90/$px2vw auto 50/$px2vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .btn {
+                display: inline-block;
+                min-width: 140/$px2vw;
+                background: #FB5061;
+                border-radius: 31/$px2vw;
+                font-size: 28/$px2vw;
+                font-weight: 500;
+                color: #FEFFFF;
+                line-height: 2.4;
+                padding: 0 10/$px2vw;
+                text-align: center;
+                margin-bottom: 30/$px2vw;
+            }
+        }
+    }
+}
