@@ -1,0 +1,13 @@
+*.sh
+*.log
+
+.DS_STORE
+.vscode
+.project
+.idea
+npm-debug.log
+package-lock.json
+node_modules
+data
+dist
+
